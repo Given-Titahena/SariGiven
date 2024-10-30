@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Cinta Panjang Berurutan Untuk Sari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pesan Cinta untuk Sari Sayang</h1>
+        <div class="message-container">
+            <div class="message slide">"Given selalu percaya bahwa cinta sejati itu ada... sampai akhirnya Given bertemu dengan Sari, dan sekarang Given tahu cinta itu nyata."</div>
+            <div class="message slide">"Kalau Sari tanya kapan Given akan berhenti mencintai Sari, mungkin itu akan terjadi ketika Given berhenti bernafas."</div>
+            <div class="message slide">"Given mungkin bukan orang yang sempurna, tapi Given pung cinta deng rasa sayang par Sari adalah sesuatu yang selalu sempurna."</div>
+            <div class="message slide">"Setiap kali Given lia Sari, Given jatuh cinta lai. seng ada yang bisa menghentikan Given hati dan terus memilih Sari, setiap hari."</div>
+            <div class="message slide">"Sari tahu ka seng? Kalau Given bisa menulis Sari nama di setiap bintang, langit malam pun akan penuh dengan cinta yang Given rasakan par Sari."</div>
+            <div class="message slide">"Sari adalah alasan Given pung senyum di pagi hari, dan alasan Given merasa bahagia saat tidur di malam hari."</div>
+            <div class="message slide">"Given seng tahu takdir seperti apa yang mempertemukan Sari deng Given, tapi Given yakin satu hal Given ingin sama sama deng Sari selamanya."</div>
+            <div class="message slide">"Given pung Cinta par Sari seng mengenal kata akhir. Ia akan terus tumbuh, menguat, dan seng pernah lelah par mencintai Sari deng menyayangi Sari."</div>
+            <div class="message slide">"Sari adalah halaman favorit dalam Given pung cerita hidup, dan Given berharap bisa terus menulis cerita cinta ini bersama Sari selamanya."</div>
+            <div class="message slide">"Kalau saja Given bisa melihat Sari melalui Given mata, Sari akan tahu betapa berharganya Sari par Given kapala manja ini."</div>
+            <div class="message slide">"LOVE YOU GIVEN PUNG PASANGAN SEHIDUP SEMATI DAN PERCAYALAH SARI ADALAH PARAMPUANG FAVORIT DI DALAM GIVEN HIDUP, GIVEN PALENG SAYANG SARI DAN PALENG SAYANG SARI SELAMANYA SAMPE GIVEN SENG ADA DI DUNIA INI LAGI."</div>
+            <div class="message slide">"Given pung ada ayat ALKITAB par Sari, Given pung pendamping hidup yang paleng cantik dan bajaga Given selalu.  "</div>
+            <div class="message slide">"Kolose 3:14 : "Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan." Ini adalah pengingat bahwa kasih adalah kekuatan yang mempersatukan Given deng Sari dalam harmoni dan kesempurnaan."</div>
+        </div>
+    </div>
+
+    <script>
+        const messages = document.querySelectorAll('.message');
+        let currentIndex = 0;
+
+        function showNextMessage() {
+            messages[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % messages.length;
+            messages[currentIndex].classList.add('active');
+        }
+
+        // Show the first message
+        messages[currentIndex].classList.add('active');
+
+        // Change message every 5 seconds
+        setInterval(showNextMessage, 10000);
+    </script>
+</body>
+</html>
